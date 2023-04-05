@@ -19,7 +19,7 @@ class _ResetPasswordState extends State<ResetPassword>{
     _emailController.dispose();
     super.dispose();
   }
-
+  //authorize user
   Future resetPassword() async {
     try {
       await FirebaseAuth.instance.
@@ -32,6 +32,8 @@ class _ResetPasswordState extends State<ResetPassword>{
           );
         },
       );}
+
+      //show error message
     on FirebaseAuthException catch (e) {
       print(e);
       showDialog(
