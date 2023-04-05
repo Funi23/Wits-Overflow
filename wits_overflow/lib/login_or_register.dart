@@ -16,6 +16,7 @@ class _LoginOrRegisterState extends State<LoginOrRegister> {
       showLogin = !showLogin;
     });
   }
+  //toggle between login and register
 
   @override
   Widget build(BuildContext context) {
